@@ -1,8 +1,6 @@
 using ChallengeE_Csharp_ByteQtd;
 
 namespace ChallengeE_Csharp_ByteQtd_test
- 
-
 {
     public class ConverterByte_Test
     {
@@ -14,8 +12,6 @@ namespace ChallengeE_Csharp_ByteQtd_test
         [InlineData(new string[] { "255" }, 1)]
         public void CenarioTeste01Retorna(string[] valoresEntrada, int esperado)
         {
-            //Arrange
-            //passando via inlineData
 
             //Act
             ConversorBytes converter = new ConversorBytes();
@@ -37,9 +33,6 @@ namespace ChallengeE_Csharp_ByteQtd_test
         [InlineData(new string[] { "255" }, 0)]
         public void CenarioTeste01Retorna(string[] valoresEntrada, int esperado)
         {
-            //Arrange
-            //passando via inlineData
-
             //Act
             ConversorBytes converter = new ConversorBytes();
             int resultado = converter.getQuantidadeFormato(valoresEntrada);
@@ -61,9 +54,6 @@ namespace ChallengeE_Csharp_ByteQtd_test
         [InlineData(new string[] { "100000" }, 1)]
         public void CenarioTeste01Retorna(string[] valoresEntrada, int esperado)
         {
-            //Arrange
-            //passando via inlineData
-
             //Act
             ConversorBytes converter = new ConversorBytes();
             int resultado = converter.getQuantidadeForaDaFaixa(valoresEntrada);
@@ -71,6 +61,5 @@ namespace ChallengeE_Csharp_ByteQtd_test
             //Asser
             Assert.Equal(esperado, resultado);
         }
-
     }
 }
